@@ -2,6 +2,8 @@ import { ApiResponse } from "../utils/api-response.js";
 import { ApiError } from "../utils/api-error.js";
 import { asyncHandler } from "../utils/async-handler.js";
 
+
+// sample code using the try catch but since try catch is repetitive so we can just create a new class f(asyncHandler) demonstrated in the next function.
 // const healthCheck = async (req, res) => {
 //   try {
 //     res.status(200)
@@ -14,6 +16,8 @@ import { asyncHandler } from "../utils/async-handler.js";
 // }
 // }
 
+
+//same function using the async handler.
 const healthCheck = asyncHandler(async (req, res, next)=> {
 
   if(req.query){
