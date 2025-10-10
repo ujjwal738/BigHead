@@ -14,7 +14,7 @@ import { asyncHandler } from "../utils/async-handler.js";
 // }
 // }
 
-const healthCheck = asyncHandler(async (req, res, next) => {
+const healthCheck = asyncHandler(async (req, res, next)=> {
 
   if(req.query){
         res.status(404).json(new ApiError( 404 , "No query Allowed in this URL", req.query))
