@@ -26,5 +26,3 @@ connectDB()  // method imported from the ./db/index.js file
   .catch((err) => {
     console.log("MongoDB connection Erorr", err)
   })
-
-
