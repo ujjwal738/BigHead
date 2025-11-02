@@ -1,32 +1,36 @@
 {
   "name": "bighead",
   "version": "1.0.0",
-  "description": "A development project managemant tool for small teams and individual developers",
+  "description": "a project management and tracking application ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
   "keywords": [
-    "Project",
-    "Management",
-    "Tool",
-    "Backend",
+    "Project Management System",
+    "BigHead",
+    "backend",
     "API"
   ],
-  "license": "ISC",
   "author": "Ujjwal Ujjwal",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.js",
-    "start": "node ./src/index.js"
-  },
+  "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.10",
     "prettier": "3.6.2"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.0"
+    "mailgen": "^2.0.29",
+    "mongoose": "^8.16.5",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5"
   }
 }
